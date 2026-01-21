@@ -623,21 +623,12 @@ function myFunction() {
 	document.getElementById("amount_guests").value = total_guests.toFixed(2);
 	
 	var num4 = document.getElementById("num_meal1").value;			
-	total_meal1 = num4 * 60;
+	total_meal1 = num4 * 65;
 	document.getElementById("amount_meal1").value = total_meal1.toFixed(2);
 	
 	var num5 = document.getElementById("num_meal2").value;			
-	total_meal2 = num5 * 60;
+	total_meal2 = num5 * 65;
 	document.getElementById("amount_meal2").value = total_meal2.toFixed(2);
-
-	// No meal 3 so calculation removed //
-	//var num6 = document.getElementById("num_meal3").value;			
-	//total_meal3 = num6 * 0;
-	//document.getElementById("amount_meal3").value = total_meal3.toFixed(2);
-	
-	var num7 = document.getElementById("num_plate").value;			
-	total_plate = num7 * 25;
-	document.getElementById("amount_plate").value = total_plate.toFixed(2);
 
 	var num8 = document.getElementById("hospitality").value;
 	total_hospitality = num8 * 1;
@@ -667,10 +658,10 @@ function myFunction() {
 	total_memoriam = num14 * 1;
 	document.getElementById("memoriam").value = total_memoriam.toFixed(2);
 	
-	// total_meal3 removed from the following to keep grand_total from breaking //
+	
 	var grand_total = 0;
-	grand_total = total + total_members + total_guests + total_meal1 + total_meal2  + total_plate +
-					total_hospitality + total_health + total_times + total_scholarship + total_actives +
+	grand_total = total + total_members + total_guests + total_meal1 + total_meal2  + total_hospitality + total_health +
+	total_times + total_scholarship + total_actives +
 					total_reserve + total_memoriam;					
 	document.getElementById("grand_total").value = grand_total.toFixed(2);
 	
