@@ -617,10 +617,7 @@ function myFunction() {
 	var txt2 = "";
 	if(txt.substring(0,4) == "yes#") {txt2 = txt.substring(4);} else {txt2 = txt.substring(3); }
 
-	if (txt2 == "elect#") {total = years * 10;}
-	else if(txt2=="mailed#") {total = years * 20;}
-	else if(txt2=="Life#") {total = 300;}
-	else if(txt=="10year#") {total = 80;}
+	if (txt=="10year#") {total = 80;}
 	document.getElementById("mem_amount").value = total.toFixed(2);
  
 	var num2 = document.getElementById("num_members").value;			
