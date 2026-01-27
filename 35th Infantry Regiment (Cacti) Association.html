@@ -617,7 +617,7 @@ function myFunction() {
 	var txt2 = "";
 	if(txt.substring(0,4) == "yes#") {txt2 = txt.substring(4);} else {txt2 = txt.substring(3); }
 	
-    if (txt2 == "Life#") {Total =300;} else{total =80}
+    if (txt2 == "Life#") {Total ="300";} else{total ="80"}
 	document.getElementById("mem_amount").value = total.toFixed(2);
  
 	var num2 = document.getElementById("num_members").value;			
